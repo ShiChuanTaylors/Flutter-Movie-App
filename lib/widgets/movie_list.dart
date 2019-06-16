@@ -9,7 +9,6 @@ class MovieListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _movieBloc = BlocProvider.of<MovieBloc>(context);
-    _movieBloc.loadMovies();
 
     return Container(
       child: Center(

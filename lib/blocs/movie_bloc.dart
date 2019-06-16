@@ -19,7 +19,6 @@ class MovieBloc extends Bloc<MovieEvent, MovieState> {
   Stream<MovieState> mapEventToState(MovieEvent event) async* {
     if (event is LoadMoviesList) {
       yield MovieLoading();
-
       try {
         final Movies movies = await _repository.fetchAllMovies();
         yield MovieLoaded(movies: movies);

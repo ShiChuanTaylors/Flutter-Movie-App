@@ -13,9 +13,19 @@ class MovieListPage extends StatefulWidget {
 }
 
 class _MovieListState extends State<MovieListPage> {
-  final _movieBloc = new MovieBloc();
+  
+  MovieBloc _movieBloc;
+
+  @override
+  void initState() {
+    _movieBloc = new MovieBloc();
+    _movieBloc.loadMovies();
+    super.initState();
+  }
+  
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
