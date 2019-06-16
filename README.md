@@ -1,6 +1,11 @@
-# flutter_movie_list
+# Flutter Movie App
 
 A new Flutter project.
+
+## References
+- Movie API: [TMDB](https://www.themoviedb.org/settings/api)
+- Code and article reference: [Architect your Flutter project using BLOC pattern - by Sagar Suri](https://medium.com/flutterpub/architecting-your-flutter-project-bd04e144a8f1)
+
 
 ## Getting Started
 
