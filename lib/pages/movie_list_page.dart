@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_movie_list/blocs/movie_bloc.dart';
+import 'package:flutter_movie_list/blocs/movie/movie_bloc.dart';
 import 'package:flutter_movie_list/widgets/movie_list.dart';
 
 class MovieListPage extends StatefulWidget {

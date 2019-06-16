@@ -1,5 +1,5 @@
-import 'package:flutter_movie_list/blocs/movie_bloc.dart';
-import 'package:flutter_movie_list/blocs/movie_state.dart';
+import 'package:flutter_movie_list/blocs/movie/movie_bloc.dart';
+import 'package:flutter_movie_list/blocs/movie/movie_state.dart';
 import 'package:test_api/test_api.dart';
 
 void main() {

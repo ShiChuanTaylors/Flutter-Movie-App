@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_movie_list/blocs/movie_bloc.dart';
-import 'package:flutter_movie_list/blocs/movie_state.dart';
 import 'package:flutter_movie_list/models/movie.dart';
-import 'package:flutter_movie_list/models/movies.dart';
 
 class MovieDetailsWidget extends StatelessWidget {
 

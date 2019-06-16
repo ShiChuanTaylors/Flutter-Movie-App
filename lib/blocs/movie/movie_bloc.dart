@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:flutter_movie_list/blocs/movie_state.dart';
+import 'package:flutter_movie_list/blocs/movie/movie_state.dart';
 import 'package:flutter_movie_list/models/movies.dart';
 import 'package:flutter_movie_list/resources/movie_repository.dart';
 import 'package:meta/meta.dart';
