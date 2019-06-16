@@ -3,16 +3,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_movie_list/blocs/movie_bloc.dart';
 import 'package:flutter_movie_list/widgets/movie_list.dart';
 
-class MoviePage extends StatefulWidget {
-  MoviePage({Key key, this.title}) : super(key: key);
+class MovieListPage extends StatefulWidget {
+  MovieListPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MoviePageState createState() => _MoviePageState();
+  _MovieListState createState() => _MovieListState();
 }
 
-class _MoviePageState extends State<MoviePage> {
+class _MovieListState extends State<MovieListPage> {
   final _movieBloc = new MovieBloc();
   @override
   Widget build(BuildContext context) {

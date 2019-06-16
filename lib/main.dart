@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_movie_list/pages/movie_page.dart';
+import 'package:flutter_movie_list/pages/movie_list_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MoviePage(title: 'My Movie List'),
+      home: MovieListPage(title: 'My Movie List'),
     );
   }
 }
