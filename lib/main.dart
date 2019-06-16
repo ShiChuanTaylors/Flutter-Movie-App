@@ -1,7 +1,13 @@
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_movie_list/pages/movie_list_page.dart';
 
-void main() => runApp(MyApp());
+import 'blocs/simple_bloc_delegate.dart';
+
+void main() {
+  BlocSupervisor.delegate = SimpleBlocDelegate();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
