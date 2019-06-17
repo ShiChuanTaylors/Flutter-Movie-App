@@ -15,7 +15,7 @@ class MovieListPage extends StatefulWidget {
 class _MovieListState extends State<MovieListPage> {
   
   MovieBloc _movieBloc;
-  
+
   @override
   void initState() {
     _movieBloc = BlocProvider.of<MovieBloc>(context);
@@ -38,7 +38,6 @@ class _MovieListState extends State<MovieListPage> {
 
   @override
   void dispose() {
-    _movieBloc.dispose();
     super.dispose();
   }
 }

@@ -9,10 +9,15 @@ import 'blocs/simple_bloc_delegate.dart';
 
 void main() {
   BlocSupervisor.delegate = SimpleBlocDelegate();
-  runApp(MyApp());
+  runApp(App());
 }
 
-class MyApp extends StatelessWidget {
+class App extends StatefulWidget {
+  @override
+  MyMovieApp createState() => MyMovieApp();
+}
+
+class MyMovieApp extends State<App> {
   // This widget is the root of your application.
   final movieBloc = new MovieBloc(repository: new MovieRepository());
 
@@ -37,5 +42,11 @@ class MyApp extends StatelessWidget {
         home: MovieListPage(title: 'My Movie List')
       )
     );
+  }
+
+  @override
+  void dispose() {
+    movieBloc.dispose();
+    super.dispose();
   }
 }
