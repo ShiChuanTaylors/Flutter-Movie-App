@@ -4,7 +4,7 @@ import 'package:flutter_movie_list/blocs/movie/movie_bloc.dart';
 import 'package:flutter_movie_list/widgets/movie_list.dart';
 
 class MovieListPage extends StatefulWidget {
-  MovieListPage({Key key, this.title}) : super(key: key);
+  MovieListPage({Key key, @required this.title}) : super(key: Key("MovieListPage"));
 
   final String title;
 
