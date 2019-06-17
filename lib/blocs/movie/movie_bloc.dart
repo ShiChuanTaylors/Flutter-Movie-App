@@ -6,8 +6,10 @@ import 'package:flutter_movie_list/resources/movie_repository.dart';
 import 'package:meta/meta.dart';
 
 class MovieBloc extends Bloc<MovieEvent, MovieState> {
-  final _repository = MovieRepository();
+  final repository;
   
+  MovieBloc({@required this.repository});
+
   void loadMovies() {
     dispatch(LoadMoviesList());
   }
@@ -20,7 +22,7 @@ class MovieBloc extends Bloc<MovieEvent, MovieState> {
     if (event is LoadMoviesList) {
       yield MovieLoading();
       try {
-        final Movies movies = await _repository.fetchAllMovies();
+        final Movies movies = await repository.fetchAllMovies();
         yield MovieLoaded(movies: movies);
       } catch (_) {
         yield MovieError();

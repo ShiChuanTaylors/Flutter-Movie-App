@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_movie_list/blocs/movie/movie_bloc.dart';
+import 'package:flutter_movie_list/resources/movie_repository.dart';
 import 'package:flutter_movie_list/widgets/movie_list.dart';
 
 class MovieListPage extends StatefulWidget {
@@ -18,7 +19,9 @@ class _MovieListState extends State<MovieListPage> {
 
   @override
   void initState() {
-    _movieBloc = new MovieBloc();
+    _movieBloc = new MovieBloc(
+      repository: new MovieRepository()
+    );
     _movieBloc.loadMovies();
     super.initState();
   }
