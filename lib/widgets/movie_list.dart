@@ -52,6 +52,7 @@ class MovieListWidget extends StatelessWidget {
             new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (BuildContext context, int index) {
           return InkWell(
+              key: Key("MOVIE_" + index.toString()),
               onTap: () => Navigator.of(context)
                       .push(MaterialPageRoute(builder: (BuildContext context) {
                     return MovieDetailsPage(

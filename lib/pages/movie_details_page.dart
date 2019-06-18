@@ -4,7 +4,7 @@ import 'package:flutter_movie_list/widgets/movie_details.dart';
 
 
 class MovieDetailsPage extends StatefulWidget {
-  MovieDetailsPage({Key key, this.data}) : super(key: key);
+  MovieDetailsPage({Key key, this.data}) : super(key: Key("MOVIE_DETAILS_PAGE"));
 
   final Movie data;
 
